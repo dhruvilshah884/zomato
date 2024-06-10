@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .main{
+      text-align:center;
+      background-color:red;
+      display:none;
+    }
+    @media only screen and (max-width: 300px) {
+      #cont-1{
+        display:block
+      }
+    }
+    @media screen and  (min-width:301px) and (max-width:600px) {
+      #cont-2{
+        display:block;
+       background-color:red;
+
+      }
+    }
+    @media screen and (min-width:601px) and (max-width:800px){
+      #cont-3{
+        display:block;
+
+      }
+    }
+    @media screen and (min-width:801px){
+      #cont-4{
+        display:block;
+
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div>
+    <div class="main" id="cont-1">mobile</div>
+    <div class="main" id="cont-2">ipad</div>
+    <div class="main" id="cont-3">pc</div>
+    <div class="main" id="cont-4">tv</div>
+
+  </div>
+</body>
+</html>
