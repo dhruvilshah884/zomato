@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "connect-mongo": "^5.1.0",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
@@ -16,11 +17,10 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node app.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "// app.post('/restrurant', upload.fields([\r //     { name: 'restaurantLogo', maxCount: 1 }, \r //     { name: 'foodImage', maxCount: 1 }, \r //     { name: 'restaurantPhotos', maxCount: 5 } \r //   ]), async (req, res) => {\r //     try {\r //       const {\r //         ownerName,\r //         restaurantName,\r //         restaurantEmail,\r //         restaurantPhoneNumber,\r //         restaurantAddress,\r //         categories,\r //         foodName,\r //         foodPrice,\r //         foodDescription,\r //         foodType\r //       } = req.body;",
-  "devDependencies": {}
+  "description": "// app.post('/restrurant', upload.fields([\r //     { name: 'restaurantLogo', maxCount: 1 }, \r //     { name: 'foodImage', maxCount: 1 }, \r //     { name: 'restaurantPhotos', maxCount: 5 } \r //   ]), async (req, res) => {\r //     try {\r //       const {\r //         ownerName,\r //         restaurantName,\r //         restaurantEmail,\r //         restaurantPhoneNumber,\r //         restaurantAddress,\r //         categories,\r //         foodName,\r //         foodPrice,\r //         foodDescription,\r //         foodType\r //       } = req.body;"
 }

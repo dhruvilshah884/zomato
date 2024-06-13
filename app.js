@@ -12,6 +12,7 @@ const session = require("express-session");
 const Jimp = require("jimp");
 const multer = require("multer");
 const stripe = require("stripe")(process.env.Stripe_Secret_Key);
+const MongoStore = require('connect-mongo');
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -23,6 +24,7 @@ app.use(
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false },
+    store: MongoStore.create({ mongoUrl: process.env.mongo_url })
   })
 );
 app.use("/uploads", express.static("uploads"));
